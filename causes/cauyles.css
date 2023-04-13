@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Inter:wght@400;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
+    
+}
+
+html{
+  scroll-behavior:smooth  ;
+}
+
+nav {
+    width: 100%;
+    height: 15vh;
+    background: #3A5A40;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    
+  }
+  
+  nav .logo {
+    width: 25%;
+    text-align: center;
+    /*background: red;*/
+  }
+  
+  nav .menu {
+    text-shadow: 1px 1px 2px black;
+    font-size:1.4rem;
+    width: 50%;
+    display: flex;
+    justify-content:space-between;
+  
+  }
+  
+  nav .menu a {
+    width: 35%;
+    text-decoration: none;
+    color: white;
+    font-weight:bolder;
+    transition: all 0.6s ease;
+  }
+  
+  nav .menu a:hover {
+    color: #c6ac8f;
+    font-size: 1.4rem;
+    text-decoration: solid;
+    
+  }
+
+  header {
+    width: 100%;
+    height: 60vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.15)),
+    url("imagess/Soil-Association-banner.jpg");
+    background-repeat: repeat;
+    background-position: 0px 60px;
+}
+
+
+main {
+  width: 100%;
+  height: 50vh;               /*view km krna h */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: black;
+
+}
+
+
+
+  section h1 {
+    margin: 80px 0 20px 40px;
+    font-size: 75px;
+    font-weight: 700;
+    text-shadow: 6px 4px 9px black;
+    text-transform: uppercase;
+  
+    color: white;
+}
+
+
+/*--------------------image secction------------------------*/
+.type{
+  display: flex;
+  transition: all 2s ease;
+  margin: 96px 0px;
+  border-radius: 20px;
+}
+
+.type:hover{
+  transform: scale(1.02);
+  box-shadow: -7px 7px 9px 2px lightgray;
+} 
+
+
+.type .image img{
+  width: 700px;
+  height: 500px;
+  padding: 60px 30px 30px;
+  
+}
+.desc{
+  padding: 30px 40px;
+
+}
+
+.desc p{
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+  border-radius: 20px;
+}
+
+
+
+/*---------------------footer-----------------------*/
+footer{
+  margin-top: 30px;
+  bottom: 0px;
+  width: 100%;
+  background: #3A5A40;
+}
+.main-content{
+  display: flex;
+  font-size: 1.6rem;
+  margin: 80px 28px 30px;
+}
+.main-content .box{
+  flex-basis: 50%;
+  padding: 10px 20px;
+  color: #d9d9d9;
+}
+.box h2{
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.box .content{
+  margin: 20px 0 0 0;
+  position: relative;
+}
+.box .content:before{
+  position: absolute;
+  content: '';
+  top: -10px;
+  height: 2px;
+  width: 100%;
+  background: #1a1a1a;
+}
+.box .content:after{
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 15%;
+  background: #c6ac8f;
+  top: -10px;
+}
+.left .content p{
+  text-align: justify;
+}
+.left .content .social{
+  margin: 20px 0 0 0;
+}
+.left .content .social a{
+  padding: 0 2px;
+}
+.left .content .social a span{
+  height: 40px;
+  width: 40px;
+  background: #3A5A40;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: 2s;
+
+  color: #d9d9d9;
+}
+.left .content .social a span:hover{
+  background: #c6ac8f;
+}
+.center .content .fas{
+  font-size: 1.4375rem;
+  background: #3A5A40;
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  transition: 2s;
+  cursor: pointer;
+}
+.center .content .fas:hover{
+  background: #c6ac8f;
+}
+.center .content .text{
+  
+  font-weight: 500;
+  padding-left: 10px;
+}
+.center .content .phone{
+  margin: 15px 0;
+}
+.right form .text{
+  font-size: 1.625rem;
+  margin-bottom: 2px;
+  color: whitesmoke;
+}
+.right form .msg{
+  margin-top: 10px;
+}
+.right form input, .right form textarea{
+  width: 100%;
+  font-size: 1.0625rem;
+  background:#5e7963;
+;
+;
+  padding-left: 10px;
+  border-radius:9px;
+border: 1px solid #222222;
+}
+.right form input:focus,
+.right form textarea:focus{
+  background-color:#998773;
+  border:2px solid grey;
+  outline-color: #3498db; 
+}
+.right form input{
+  height: 35px;
+}
+.right form .btn{
+  margin-top: 10px;
+}
+.right form .btn button{
+  height: 40px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #3A5A40;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 2s;
+  border-radius:9px;
+  color: #d9d9d9;
+}
+.right form .btn button:hover{
+  background: #998773;
+}
+.bottom center{
+  padding: 5px;
+  font-size: 0.9375rem;
+  background: #151515;
+}
+.bottom center span{
+  color: #656565;
+}
+.bottom center a{
+  color: #3A5A40;
+  text-decoration: none;
+}
+.bottom center a:hover{
+  text-decoration: underline;
+}
+@media screen and (max-width: 900px) {
+  footer{
+    position: relative;
+    bottom: 0px;
+  }
+  .main-content{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .main-content .box{
+    margin: 5px 0;
+  }
+}
+
+
+
+
+
+.gotopbtn{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: #27ae60;
+  bottom: 20px;
+  left: 20px;
+  border-radius: 25px;
+
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+  font-size: 22px;
+}
